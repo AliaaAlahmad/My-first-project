@@ -1,0 +1,707 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a
+{text-decoration: none;}
+body
+{
+    height: 6000px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header
+{
+    width: 100%;
+    height: 55px;
+    background-color: rgba(8, 8, 56, 0.719);
+    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.logo
+{
+    position: absolute;
+    margin-left: 50px;
+}
+.menu ul
+{
+    float: right;
+    margin-top: 15px;
+    list-style: none;    
+}
+.menu ul li
+{
+    display: inline;
+    position: relative;   
+}
+.menu ul li a
+{
+    color: #fff;
+    margin-right: 40px;
+    font-size: 18px;
+}
+.home-menu p.active
+{   width: 50px;
+    height: 3px;
+    background-color: blue; 
+}
+.home-menu li.li1{display: inline-block;}
+.menu ul li.l1 a::before
+{   position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    bottom: -4px;
+    left: 0;
+    background-color: blue;
+    opacity: 0;
+    transition: 1s;
+}
+.menu ul li.l1 a:hover:before
+{
+    width: 50px;
+    height: 3px;
+    opacity: 1;
+}
+.home-container
+{   position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/pngtree-back-to-school-rectangular-blackboard-education-book-pen-holder-picture-image_1168219.jpg);
+}
+.overlay,.score-overlay ,.branches-overlay
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:rgba(8, 8, 56, 0.685); 
+    top: 0;
+    left: 0;
+}
+.home-par
+{
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+    text-align: center;
+    color: #fff;
+}
+.home-par h2
+{
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    color: #fff;
+}
+.home-par span
+{
+    letter-spacing: 2px;
+    margin-top: 20px;
+    font-size: 20px;
+    
+}
+.home-btn 
+{
+    padding: 10px 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.btn2
+{
+    background-color: blue;
+    color: #fff;
+}
+.home-btn:hover{
+    opacity: 0.7;
+}
+ h2
+{
+    color: rgb(8, 8, 56); ;
+    padding-top: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.line
+{
+    width: 80px;
+    height: 4px;
+    background-color: blue;
+    margin: auto;
+}
+.line1
+{
+    width: 80px;
+    height: 4px;
+    background-color: blue; 
+    margin-left: 10px;
+}
+.levels-container , .subject-container ,.services-container ,.chooseus-container,.score-container,.price-ontainer ,.branches-container,.team-container,.exams-container
+{
+    width: 80%;
+    margin: auto;
+    height: 400px;
+}
+.levels-item , .subject-img ,.services-item,.price-item,.team-item ,.exams-item
+{
+    border: 1px solid  rgb(8, 8, 56);
+    float: left;
+    text-align: center;
+    width: 30%;
+    height: 200px;
+    padding: 20px 10px;
+    position: relative;   
+}
+.levels-container .s2 , .img1 ,.item2,.middel,.item22,.item3
+{
+    margin: 0 5% ;
+}
+.levels-item h3 , .services-item h3 , .choose-item h3{
+    color:rgb(8, 8, 56);  
+    font-size: 25px;
+    padding: 10px 10px;
+}
+.choose-item h3
+{
+    font-size: 50px;
+}
+.services-item h3
+{
+    margin-right: 50px;
+}
+.levels-item .icon , .icon2
+{
+    font-size: 25px;
+    color: rgb(100, 169, 248);
+    padding: 0 10px;
+}
+.levels-item p , .services-item p, .choose-item p ,.score-item p,.price-item span
+{
+    font-size: 20px;
+    color: rgb(34, 34, 41);
+    padding-bottom: 10px;
+}
+.choose-item p{padding-top: 30px;}
+.choose-item span{line-height: 40px;
+font-size: 20px;}
+.levels-item a
+{
+    font-size: 20px; 
+    color: rgb(100, 169, 248);  
+}
+.levels-parent , .subject-content ,.services-content,.price-content ,.team-content
+{ 
+    padding: 100px 0;   
+}
+.levels-item::after ,.services-item::after
+{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(8, 8, 56, 0.596) ;
+    opacity: 0;      
+}
+.levels-item:hover::after ,.services-item:hover:after
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    transition: 1s;
+}
+.info
+{
+    position: absolute;
+    z-index: 12;
+}
+.services-item:hover h3 ,.levels-item:hover h3
+{
+    color: #fff;
+}
+.subjects,.chooseus,.price
+{
+    width: 100%;
+    height: 900px;
+    background-color:rgba(156, 156, 177, 0.212);
+    margin:150px 0;  
+}
+.price
+{
+    margin-top:-150px;
+}
+.subject-img ,.services-item
+{
+    width: 30%;
+    height: 250px;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 20px;
+    border: 0;
+}   
+.subject-overlay
+{
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(8, 8, 56, 0.596); 
+    visibility: hidden;
+    text-align: center;
+    padding: 80px 0;
+}
+.subject-overlay h3
+{
+    color:  rgb(100, 169, 248);
+    font-size: 20px;
+}
+.subject-overlay p
+{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.sub-icon
+{
+    background-color:rgb(100, 169, 248); 
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.subject-img:hover  .subject-overlay
+{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+}
+.icon2
+{
+    float: left;
+    font-size: 30px;
+    padding: 10px 0;
+    margin-left: 10px;
+}
+.services-item
+{
+    border: 1px solid  rgb(8, 8, 56);
+    height: 200px;
+}
+.services-item p,.team-info span
+{
+    color: rgba(8, 8, 56, 0.479);
+}
+.choose-img,.choose-item ,.branches-item
+{
+    float: left;
+    width: 50%;
+    height: 300px;
+    margin-top: 100px;
+}
+
+.choose-img ul
+{
+    display: block;
+    margin-left: 200px;
+}
+.choose-img ul li
+{
+    float: left;
+    font-size: 40px;
+    margin-left: 30px;
+    color: #acaaaa;
+}
+.choose-dot li.active 
+{
+    color:  rgb(100, 169, 248);
+}
+.choose-dot li:hover
+{
+    color: rgb(100, 169, 248);
+}
+.icon3 ,.score-icon
+{
+    color:rgb(100, 169, 248); 
+    font-size: 20px;
+}
+.score
+{
+    background: url(../images/istockphoto-.jpg);
+    width: 100%;
+    height: 300px;
+    margin-top: 200px;  
+    position: relative;
+}
+.score-item
+{
+    width: 20%;
+    height: 150px;
+    float: left;
+    text-align: center;
+    margin-top: 100px;
+}
+.score-conten
+{
+    position: absolute;
+}
+.score-icon
+{
+    color:rgb(77, 159, 253); 
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.score-item h3
+{
+    font-size: 30px;
+    color: #fff;
+}
+.score-item p
+{
+    color: #fff;
+}
+.price-pay
+{
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(77, 159, 253);
+    border-radius: 50%;
+    margin-left: 100px;
+    margin: 20px 100px;
+}
+.price-item
+{
+    height: 320px;
+    position: relative;
+}
+.price-item h3
+{
+    font-size: 35px;
+    padding: 10px 10px;
+}
+.price-btn
+{
+    border: 2px solid rgb(77, 159, 253);
+    margin: 10px;
+    color: rgb(8, 8, 56);
+    padding:5px 10px;
+}
+.price-pay h4
+{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.price-title
+{
+    text-transform: uppercase;
+}
+.price-item::after
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:rgba(8, 8, 56, 0.911) ;
+    opacity: 0;
+    transition: 1s;
+}
+.price-item:hover::after
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.price-item:hover .price-title ,.price-item:hover .price-pay{
+    color:blue;
+    z-index: 20;
+}
+.branches
+{
+    background: url(../images/school.jpeg);
+    width: 100%;
+    height: 300px;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    margin-top: -350px;
+}
+.branches-item img
+{
+    border-radius: 50%;
+    border: 0;
+}
+.branches-item  .header1
+{
+    float: right;
+    margin-right: 200px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.branches-item h3
+{
+    font-size: 20px;
+    color: #fff;
+}
+.branches-item span
+{
+    font-size: 18px;
+    color:  rgb(77, 159, 253);   
+}
+.branches-item p
+{
+    padding: 15px;
+    font-size: 18px;
+    color: #fff;
+}
+.branches-item
+{
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 100px;
+}
+.team-item
+{
+    height: 300px;
+    background-color:rgba(156, 156, 177, 0.212); 
+    border: 0;
+}
+.team-info span
+{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.team-img
+{
+    position: relative;
+    width: 68%;
+    margin: auto;
+}
+.team-overlay
+{
+    position: absolute;
+    background-color:  rgba(8, 8, 56, 0.596) ;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+.team-overlay a
+{
+    display:  block;
+    width: 20%;
+    height: 35px;
+    color: #fff;
+    background-color: rgb(77, 159, 253);
+    font-size: 15px;
+    margin-left: auto;
+    padding: 5px 0;
+    visibility: hidden;
+}
+.team-info h3
+{
+    padding: 5px 0;
+}
+.team-item::after
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:rgba(8, 8, 56, 0.596) ;
+    opacity: 0;
+} 
+.team-item:hover:after
+{
+    height: 100%;
+    transition: 1s;
+    opacity: 0.7;
+}
+.team-item:hover .team-overlay a
+{
+    visibility: visible;
+    z-index: 50;
+}
+.team-item:hover  .team-overlay
+{
+    visibility: visible;
+}
+
+.team-item:hover .team-info h3
+{
+    color: #686767;
+    z-index: 50;
+}
+.team-item:hover .team-info span
+{
+    color:blue 
+}
+.exams-item
+{
+    height: 550px;
+    border: 0;
+    background-color: #fff;
+    margin-top: 100px;
+    margin-top: -120px;
+    text-align: left;
+    position: relative;
+}
+.exam-container
+{
+    height: 600px;
+}
+.exams-content
+{
+    background-color:rgba(193, 193, 197, 0.212);
+    width: 100%;
+    height: 530px;
+    margin-top: 100px;
+    padding-top: 100px; 
+}
+.exams-item img
+{
+    margin-bottom: 20px
+}
+.exam-info
+{
+    padding: 20px 5px;
+}
+.exam-info i
+{
+    color: rgb(100, 169, 248);
+    font-size: 10px;
+    margin-left: 5px;
+}
+.exam-info span
+{
+    font-size: 15px;
+}
+.exams-item h3
+{
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+.exams-item p
+{
+    color:rgba(8, 8, 56, 0.596) ;
+    font-size: 18px;
+}
+.exams-item a
+{
+    font-size: 18px;
+    color: rgb(100, 169, 248);
+}
+.exams-item::after
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 20px;
+    left: 0;
+    background-color:rgba(8, 8, 56, 0.596) ;
+    transition: 1s;
+    opacity: 0;
+}
+.exams-item:hover::after
+{
+    height: 96%;
+    opacity: 0.5;
+}
+.contact
+{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(8, 8, 56, 0.596) ;
+    margin-top: 130px;
+    text-align: center;
+}
+.contact img
+{
+    margin-top: 50px;
+}
+.contact ul
+{
+  
+    list-style: none;
+    margin: 20px 0;
+}
+.contact ul li 
+{
+    display: inline-block;
+    font-size: 25px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color:rgb(100, 169, 248) ;
+    border-radius: 50%;
+    z-index: 1;
+}
+.contact ul li a
+{   
+    display: block;
+    width:100%;
+    height: 100%;
+    color:rgb(100, 169, 248) ;
+    color: #fff;
+    line-height: 50px;
+    padding-top: 15px;
+    padding-right: 15px;
+    font-size: 23px;
+    margin: 0 8px;  
+}
+.contact p
+{
+    color: rgba(193, 193, 197, 0.945);
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.contact ul li::after
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: blue;
+    opacity: 0;
+    transition: 0.5s;
+   
+}
+.contact ul li:hover:after
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: -1;
+    border-radius: 50%;
+    
+}
+
+
+
+
+
+
+
+
